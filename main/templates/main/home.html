@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <title>Profiler</title>
+        <style>
+            * {
+                margin: auto;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                font-family: "Montserrat", sans-serif;
+            }
+
+            a {
+                color: white;
+            }
+
+            a::after {
+                color: white;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .navig {
+                display: flex;
+                flex-direction: row;
+                background-color: cornflowerblue;
+                border-radius: 0px 0px 12px 12px;
+            }
+
+            .navig > div {
+                padding: 10px;
+            }
+
+            .mainleftright {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                align-self: center;
+                margin-top: 20vh;
+            }
+
+            .mainright > img {
+                max-width: 500px;
+            }
+
+            .mainleft,
+            .mainright {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navig">
+                <div>
+                    <a href="signin">Sign in</a>
+                </div>
+                <div>
+                    <a href="signup">Sign up</a>
+                </div>
+            </div>
+
+            <div class="mainleftright">
+                <div class="mainleft">
+                    <h1>Make your own profile now!</h1>
+                    <h3>Lifetime free maintainence...</h3>
+                </div>
+                <div class="mainright">
+                    <img
+                        src="https://i.pinimg.com/originals/64/3c/1e/643c1e0f1c6cbddc362909cdc0cdf2bb.jpg"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

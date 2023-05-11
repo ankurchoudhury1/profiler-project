@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <title>Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .profilecontainer {
+            margin-top: 2vh;
+        }
+
+        .topnav {
+            margin: 0px 30px 0px 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .topnavright>a {
+            padding-left: 10px;
+        }
+
+        .card {
+            border: 6px solid rgb(228, 236, 255);
+            border-radius: 12px;
+            background-color: rgb(244, 248, 255);
+            padding: 18px;
+            margin: 20px;
+        }
+
+        .card-image>img {
+            max-width: 400px;
+            max-height: 300px;
+        }
+
+        .card-author-time {
+            display: flex;
+            font-weight: 800;
+            justify-content: start;
+            align-items: baseline;
+            width: fit-content;
+        }
+
+        .card-date {
+            margin-left: 10px;
+            font-weight: 400;
+            font-size: small;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="profilecontainer">
+        <div class="topnav">
+            <div>
+                <strong>Home</strong>
+            </div>
+            <div class="topnavright">
+                <a href="{% url 'settings' %}">Settings</a>
+                <a href="{% url 'blogs' %}">My Blogs</a>
+                <a href="{% url 'createapost' %}">Create a Post</a>
+                <a href="{% url 'signout' %}">Signout</a>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="card">
+                <div class="card-author-time">
+                    <div class="card-author">
+                        John Doe
+                    </div>
+                    <div class="card-date">
+                        10 May 23 : 2:24 pm
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="https://thenewswheel.com/wp-content/uploads/2020/02/Apollo-Launch-Flikr.jpg" alt="">
+                </div>
+                <div class="card-title">
+                    Rocket
+                </div>
+
+                <div class="card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit cumque laboriosam earum
+                    necessitatibus nihil. Non saepe enim ab quod magnam, doloremque exercitationem earum quidem
+                    distinctio optio rerum eum. Aut!
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-author-time">
+                    <div class="card-author">
+                        John Doe
+                    </div>
+                    <div class="card-date">
+                        10 May 23 : 2:24 pm
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="https://thenewswheel.com/wp-content/uploads/2020/02/Apollo-Launch-Flikr.jpg" alt="">
+                </div>
+                <div class="card-title">
+                    Rocket
+                </div>
+            
+                <div class="card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit cumque laboriosam earum
+                    necessitatibus nihil. Non saepe enim ab quod magnam, doloremque exercitationem earum quidem
+                    distinctio optio rerum eum. Aut!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
